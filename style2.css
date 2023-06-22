@@ -460,7 +460,7 @@ body{
     width: 50%;
 }
 .netP3 div{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 200px;
 }
 .netP3 div h2{
@@ -510,108 +510,89 @@ footer{
 
 
 @media screen and (max-width: 758px){
-    /*Aqui os containers podem ser juntos*/
+    /*Container Initial*/
     .container_initial p {
         font-size: 15px;
     }
-    /*Aqui os containers podem ser juntos*/
-    .container_initial, 
-    .container_chosen,
-    .container_about,
-    .container_class,
-    .container_network{
-        display: flex;
-        width: 100%;
-        height: 100%;
+    .menuList li{
+        display: none;
     }
-    /*Daqui pra frente, separados*/
+    .space_logo{
+        margin-left: -30px;
+        background-color: #010304;
+        width: 120%;
+        height: 12%;
+    }
+    .space_logo ul{
+        display: none;
+    }
+    .background{
+        background-size: 350%;
+        background-position: center top;
+    }
+    /*fim container initial*/
 
-    /*Inicio CONTAINERS ULS*/
-    .container_initial ul{
-        display: flex;
+    /*início container chosen*/
+    .container_chosen{
         flex-direction: column;
-        width: 380px;
+        height: 900px;
     }
-    .container_chosen ul{
+    .container_chosen .sq1{
+        width: 100%;
+        height: 16%;
+    }
+    .container_chosen .sq1 h1{
+        margin-left: 20px;
+        font-size: 38px;
+    }
+    .container_chosen .sq2{
+        width: 100%;
+         height: 28%;
+    }
+    .container_chosen .sq3 {
+        width: 100%;
+         height: 28%;
+    }
+    .container_chosen .sq4{
+        width: 100%;
+         height: 28%;
+    }
+    /*fim container chosen*/
+
+    /*inicio container about*/
+    .container_about {
+        height: 1000px;
+    }
+    .container_about h1{
+        margin-left: 20px;
+        font-size: 30px;
+        width: 100%;
+    }
+    .container_about p{
+        margin-left: 20px;
+        width: 100%;
+    }
+    .container_about .text_about{
         display: flex;
-        flex-direction: column;
-        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        height: 600px;
+        margin-top: -200px;
     }
-    .container_about ul{
-        display: flex;
-        flex-direction: column;
-        width: 380px;
+    .container_about p{
+        font-size: 20px;
     }
+    /*fim container about*/
     .container_class ul{
         display: flex;
         flex-direction: column;
         width: 380px;
-    }
-    .container_network ul{
-        display: flex;
-        flex-direction: column;
-        width: 380px;
-    }
-    /*FIM CONTAINERS UL*/
-
-    /*INICIO CONTAINERS UL LI*/
-    .container_initial ul li{
-        height: 270px;
-        width: 100%;
-        font-size: 17px;
-    }
-    .container_chosen ul li{
-        height: 270px;
-        width: 100%;
-        font-size: 17px;
-    }
-    .container_about ul li{
-        height: 270px;
-        width: 100%;
-        font-size: 17px;
     }
     .container_class ul li{
         height: 270px;
         width: 100%;
         font-size: 17px;
     }
-    .container_network ul li{
-        height: 270px;
-        width: 100%;
-        font-size: 17px;
-    }
-    /*FIM CONTAINERS UL LI*/
 
-    /*INICIO CONTAINERS UL LI A*/
-    .container_initial ul li a{
-        padding-bottom: 32px;
-        width: 180px;
-        font-size: 20px;
-        justify-content: center;
-    }
-    .container_chosen ul li a{
-        padding-bottom: 32px;
-        width: 180px;
-        font-size: 20px;
-        justify-content: center;
-    }
-    .container_about ul li a{
-        padding-bottom: 32px;
-        width: 180px;
-        font-size: 20px;
-        justify-content: center;
-    }
-    .container_class ul li a{
-        padding-bottom: 32px;
-        width: 180px;
-        font-size: 20px;
-        justify-content: center;
-    }
-    .container_network ul li a{
-        padding-bottom: 32px;
-        width: 180px;
-        font-size: 20px;
-        justify-content: center;
-    }
-    /*FIM CONTAINERS UL LI A*/
 }
