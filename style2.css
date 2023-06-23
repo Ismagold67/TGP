@@ -523,8 +523,6 @@ footer{
 
 @media screen and (max-width: 758px){
     /*Container Initial*/
-    body{
-    }
     .animation{
         height: 1000px;
     }
@@ -540,7 +538,7 @@ footer{
     }
     .nextClick{
         display: block;
-
+        background-color: #010304;
     }
     .spaceBigLogo h1{
         font-size: 45px;
@@ -703,22 +701,22 @@ footer{
         overflow: hidden;
     }
     .container_network .netP1{
-        width: 100%;
         height: 0;
     }
     .container_network .subNet{
         flex-direction: column;
     }
     .container_network .netP2{
-        margin-left: -120px;
-        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 100px;
         font-size: 25px;
     }
     .container_network .subNet .netP3{
-        margin-left: -120px;
-        height: 50%;
-        width: 117%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 150px;
         font-size: 25px;
     }
