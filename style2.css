@@ -523,6 +523,8 @@ footer{
 
 @media screen and (max-width: 758px){
     /*Container Initial*/
+    body{
+    }
     .animation{
         height: 1000px;
     }
@@ -538,7 +540,7 @@ footer{
     }
     .nextClick{
         display: block;
-        
+
     }
     .spaceBigLogo h1{
         font-size: 45px;
@@ -554,7 +556,7 @@ footer{
     }
     .newsletter{
         flex-direction: column;
-        margin-left: -380px;
+        margin-left: -363px;
         margin-top: 750px;
         width: 140%;
     }
@@ -591,7 +593,7 @@ footer{
     .space_logo{
         margin-left: -10px;
         background-color: #010304;
-        width: 120%;
+        width: 115%;
         height: 12%;
     }
     .space_logo ul{
@@ -607,6 +609,7 @@ footer{
     .container_chosen{
         flex-direction: column;
         height: 900px;
+        overflow: hidden;
     }
     .container_chosen .sq1{
         width: 100%;
@@ -634,6 +637,7 @@ footer{
     .container_about {
         height: 1100px;
         background-attachment: initial;
+        overflow: hidden;
     }
     .container_about h1{
         margin-left: 15px;
@@ -696,6 +700,7 @@ footer{
         height: 140%;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
     .container_network .netP1{
         width: 100%;
