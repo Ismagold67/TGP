@@ -8,6 +8,7 @@ var backgroundClass = document.querySelector('.backgroundClass');
 const Up = document.querySelectorAll('.Up')
 var previousScrollPosition = document.documentElement.scrollTop;
 const lis = document.querySelectorAll('.container_class ul li')
+const about = document.querySelector('.container_about')
 
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -27,9 +28,16 @@ animationDivs.forEach((element) => myObserver.observe(element))
 Up.forEach((element) => myObserverUp.observe(element))
 
 lis.forEach(element => {
+  var largura = window.innerWidth
+
   element.style.backgroundImage = "url(images/predio.jpg)"
-  element.style.backgroundSize = 'cover'
-  element.style.backgroundAttachment = 'fixed'
+
+  if(largura < 391){
+    element.style.backgroundAttachment = ''
+    element.style.backgroundSize = '250%'
+  } else {
+    element.style.backgroundAttachment = 'fixed'
+  }
 })
 
 window.addEventListener('scroll', ()=> {
