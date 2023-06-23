@@ -525,26 +525,35 @@ footer{
     /*Container Initial*/
     .animation{
         height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
     }
     .container_initial{
+        overflow: hidden;
+        height: 100%;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+
     }
     .container_initial p {
         font-size: 15px;
     }
     .container_initial .spaceBigLogo{
-        margin-left: -10px;
-        margin-top: -30px;
+        margin-top: -300px;
+        display: flex;
+        align-items: center;
     }
     .nextClick{
         display: block;
         background-color: #010304;
     }
     .spaceBigLogo h1{
-        font-size: 45px;
-        margin-top: -270px;
-        margin-right: 20px;
-        margin-left: 32px;
+        font-size: 35px;
+        width: 100%;
+        margin-left: -20px;
     }
     .newsletter .p0{
         display: none;
@@ -555,7 +564,7 @@ footer{
     .newsletter{
         flex-direction: column;
         margin-left: -363px;
-        margin-top: 750px;
+        margin-top: 650px;
         width: 140%;
     }
     .newsletter h2{
@@ -650,6 +659,8 @@ footer{
     }
     .container_about .text_about{
         display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-left: 5px;
         margin-right: auto;
         width: 370px;
