@@ -612,13 +612,13 @@ footer{
         display: flex;
         flex-direction: column;
         width: 380px;
-
-
     }
     .container_class ul li{
         height: 250px;
         width: 350px;
         font-size: 17px;
+        background-image: url(images/predio.jpg);
+        background-attachment: fixed;
     }
     /*Fim container class*/
 }
