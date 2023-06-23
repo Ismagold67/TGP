@@ -564,6 +564,7 @@ footer{
     .nextClick{
         display: block;
         background-color: #010304;
+        margin-left: 25px;
     }
     .spaceBigLogo h1{
         font-size: 35px;
