@@ -34,13 +34,26 @@ lis.forEach(element => {
 
 window.addEventListener('scroll', ()=> {
   var scrollPosition = window.pageYOffset /100
-  console.log(scrollPosition)
+  //console.log(scrollPosition)
   element.style.transform = `scale(1.2) translateX(${scrollPosition}%)`
 })
 window.addEventListener('scroll', ()=> {
   var scrollPosition = window.pageYOffset /100 - 25
-  backgroundClass.style.transform = `scale(1.2) translateX(${scrollPosition}%)`
+  var largura = window.innerWidth
+
+
+  if(largura < 391){
+    backgroundClass.style.transform = `scale(1.5) translateX(${scrollPosition -10}%)`
+  } else {
+    backgroundClass.style.transform = `scale(1.2) translateX(${scrollPosition}%)`
+  }
 })
+
+window.addEventListener("resize", () =>{
+  var largura = window.innerWidth
+  console.log(largura)
+})
+
 
 menuList.forEach(op => {
     styleOfTag(op, 'mousemove', '', '.2s', "#f2f2f26b")

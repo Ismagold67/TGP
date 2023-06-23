@@ -561,22 +561,24 @@ footer{
 
     /*inicio container about*/
     .container_about {
-        height: 1000px;
+        height: 1100px;
     }
     .container_about h1{
-        margin-left: 20px;
+        margin-left: 15px;
+        margin-right: auto;
         font-size: 30px;
         width: 100%;
     }
     .container_about p{
-        margin-left: 20px;
-        width: 100%;
+        margin-left: 15px;
+        margin-right: auto;
+        width: 95%;
     }
     .container_about .text_about{
         display: flex;
-        margin-left: auto;
+        margin-left: 5px;
         margin-right: auto;
-        width: 350px;
+        width: 370px;
         height: 600px;
         margin-top: -200px;
     }
@@ -584,15 +586,40 @@ footer{
         font-size: 20px;
     }
     /*fim container about*/
+
+    /*início container class*/
+    .ClassTgp{
+        height: 2200px;
+    }
+    .backgroundClass{
+        background-size: 350;
+        background-position: center right;
+    }
+    .container_class{
+        height: 140%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .container_class h1{
+        margin-top: -1000px;
+    }
+    .container_class p{
+        width: 80%;
+    }
     .container_class ul{
         display: flex;
         flex-direction: column;
         width: 380px;
+
+
     }
     .container_class ul li{
-        height: 270px;
-        width: 100%;
+        height: 250px;
+        width: 350px;
         font-size: 17px;
     }
-
+    /*Fim container class*/
 }
