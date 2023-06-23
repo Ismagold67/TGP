@@ -78,8 +78,6 @@ function styleOfTag(vary, event, m1, m2, m3, m4){
     })
 }
 
-
-
 styleOfTag(maT, 'mousemove', '#07141c62', '.2s', '', '1px solid white')
 styleOfTag(maT, 'mouseout', '', '1s', '', '')
 
