@@ -16,17 +16,19 @@ body{
     position: absolute;
 }
 .nextClick{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     margin-right: auto;
-    margin-left: -15px;
+    margin-top: 10px;
+    margin-left: 30px;
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
     background-image: url(images/butao.png);
-    background-size: 105%;
+    background-size: cover;
     display: none;
 }
+
 .background {
     position: absolute;
     width: 100%;
@@ -60,6 +62,16 @@ body{
 .space_logo li a{
     padding: 8px;
     background-color: #07141C;
+}
+.space_logo li a:hover{
+    background-color: #07141c62;
+    border: 1px solid #f2f2f2;
+    transition: 2s;
+    cursor: pointer;
+}
+.space_logo li a:not(:hover){
+    border: none;
+    transition: 2s;
 }
 .spaceBigLogo{
     margin-top: -1290px;
@@ -286,6 +298,7 @@ body{
     align-items: center;
 }
 .title_about{
+    margin-top: 20px;
     width: 100%;
     height: 50%;
 }
@@ -521,6 +534,8 @@ footer{
 /*FIM FOOTER*/
 
 
+
+
 @media screen and (max-width: 758px){
     /*Container Initial*/
     .animation{
@@ -598,10 +613,10 @@ footer{
         display: none;
     }
     .space_logo{
-        margin-left: -10px;
+        margin-left: -25px;
         background-color: #010304;
         width: 115%;
-        height: 12%;
+        height: 9%;
     }
     .space_logo ul{
         display: none;

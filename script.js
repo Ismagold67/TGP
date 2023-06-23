@@ -1,6 +1,7 @@
 const menuList = document.querySelectorAll('.menuList li a')
 const contClass = document.querySelectorAll('.container_class li a')
 const spaceLogo = document.querySelector('.space_logo')
+const nextClick = document.querySelector('.nextClick')
 const maT = document.querySelector('.space_logo li a')
 const anim = document.querySelectorAll('.container_initial')
 const animationDivs = document.querySelectorAll('.hidden')
@@ -91,3 +92,9 @@ contClass.forEach(as=> {
     styleOfTag(as, 'mouseout','', '1s', '')
 });
 
+nextClick.addEventListener('touchstart', () =>{
+  nextClick.style.backgroundImage = 'url()'
+})
+nextClick.addEventListener('touchend', () =>{
+  nextClick.style.backgroundImage = 'url(images/butao.png)'
+})
