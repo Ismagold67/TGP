@@ -37,6 +37,7 @@ lis.forEach(element => {
     element.style.backgroundSize = '250%'
   } else {
     element.style.backgroundAttachment = 'fixed'
+    element.style.backgroundSize = 'cover'
   }
 })
 
