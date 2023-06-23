@@ -592,7 +592,8 @@ footer{
         height: 2200px;
     }
     .backgroundClass{
-        background-size: 350;
+        background-size: 350%;
+        background-position: right top;
     }
     .container_class{
         height: 140%;

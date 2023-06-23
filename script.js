@@ -43,7 +43,7 @@ window.addEventListener('scroll', ()=> {
 
 
   if(largura < 391){
-    backgroundClass.style.transform = `scale(1) translateX(${scrollPosition -10}%)`
+    backgroundClass.style.transform = `scale(1.5) translateX(${scrollPosition -10}%)`
   } else {
     backgroundClass.style.transform = `scale(1.2) translateX(${scrollPosition}%)`
   }
