@@ -579,7 +579,7 @@ footer{
     }
     .newsletter{
         flex-direction: column;
-        margin-left: -350px;
+        margin-left: -330px;
         margin-top: 650px;
         width: 140%;
     }
