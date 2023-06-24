@@ -289,10 +289,9 @@ body{
     background-image: url(images/meet2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 750px;
+    height: 850px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
     align-items: center;

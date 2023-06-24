@@ -1,16 +1,4 @@
-const menuList = document.querySelectorAll('.menuList li a')
-const contClass = document.querySelectorAll('.container_class li a')
-const spaceLogo = document.querySelector('.space_logo')
-const nextClick = document.querySelector('.nextClick')
-const maT = document.querySelector('.space_logo li a')
-const anim = document.querySelectorAll('.container_initial')
-const animationDivs = document.querySelectorAll('.hidden')
-var element = document.querySelector('.background');
-var backgroundClass = document.querySelector('.backgroundClass');
-const Up = document.querySelectorAll('.Up')
-var previousScrollPosition = document.documentElement.scrollTop;
-const lis = document.querySelectorAll('.container_class ul li')
-const about = document.querySelector('.container_about')
+import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up} from './variables/tagsMani.js'
 
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
