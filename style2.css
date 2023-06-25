@@ -547,8 +547,12 @@ footer{
     font-weight: bold;
 }
 /*FIM FOOTER*/
-
-
+.nextClick{
+    display: block;
+    background-color: #010304;
+    margin-left: 200px;
+    display: flex;
+}
 
 
 @media screen and (max-width: 758px){
@@ -761,7 +765,7 @@ footer{
         font-size: 25px;
     }
     .netP2 h2{
-        margin-left: 140px;
+        margin-left: 150px;
         margin-top: -125px;
     }
     .container_network .subNet .netP3{

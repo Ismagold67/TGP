@@ -1,4 +1,4 @@
-import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up} from './variables/tagsMani.js'
+import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura} from './variables/tagsMani.js'
 
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -86,3 +86,6 @@ nextClick.addEventListener('touchstart', () =>{
 nextClick.addEventListener('touchend', () =>{
   nextClick.style.backgroundImage = 'url(images/butao.png)'
 })
+if(largura < 321){
+  nextClick.style.marginLeft = '145px'
+}
