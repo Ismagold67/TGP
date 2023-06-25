@@ -1,4 +1,4 @@
-import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura} from './variables/tagsMani.js'
+import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura, containerAnimation} from './variables/tagsMani.js'
 
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -89,3 +89,9 @@ nextClick.addEventListener('touchend', () =>{
 if(largura < 321){
   nextClick.style.marginLeft = '145px'
 }
+nextClick.addEventListener('mousedown', () => {
+  containerAnimation.style.filter = 'blur(5px)'
+})
+nextClick.addEventListener('mouseup', () => {
+  containerAnimation.style.filter = 'blur(0)'
+})
