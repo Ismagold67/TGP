@@ -687,23 +687,24 @@ footer{
         overflow: hidden;
     }
     .container_about h1{
-        margin-left: 15px;
+        margin-left: 20px;
         margin-right: auto;
-        font-size: 30px;
-        width: 100%;
+        font-size: 32px;
+        width: 92%;
     }
     .container_about p{
-        margin-left: 15px;
+        margin-left: 20px;
         margin-right: auto;
-        width: 95%;
+        width: 89%;
+        text-align: justify;
     }
     .container_about .text_about{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-left: 5px;
-        margin-right: auto;
-        width: 370px;
+        margin-left: auto;
+        width: 375px;
         height: 600px;
         margin-top: -130px;
     }
