@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Rajdhani', sans-serif;
 }
@@ -16,11 +17,11 @@ body{
     position: absolute;
 }
 .nextClick{
-    width: 70px;
-    height: 70px;
+    width: 38px;
+    height: 37px;
     margin-right: auto;
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-top: 23px;
+    margin-left: 5px;
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
@@ -54,6 +55,13 @@ body{
     width: 100%;
     height: 50px;
     display: flex;
+}
+.space_logo h2{
+    margin-left: -1100px;
+    margin-top: 9px;
+    font-family: 'Bayon', sans-serif;
+    font-size: 25px;
+    text-shadow: 10px 10px rgb(15, 40, 226);
 }
 .space_logo li{
     color: #f2f2f2;
@@ -474,11 +482,19 @@ body{
     margin-top: 100px;
     margin-left: 200px;
     width: 250px;
+    font-size: 55px;
 }
 .netP2 p{
     width: 250px;
     margin-left: 200px;
     font-weight: bold;
+}
+.netP2 h2{
+    font-family: 'Bayon', sans-serif;
+    text-shadow: 10px 10px rgb(15, 40, 226);
+    margin-left: 285px;
+    margin-top: -80px;
+    font-size: 25px;
 }
 .container_network .subNet .netP3{
     width: 50%;
@@ -542,14 +558,12 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
     }
     .container_initial{
-        overflow: hidden;
         height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;;
 
     }
     .container_initial p {
@@ -560,15 +574,10 @@ footer{
         display: flex;
         align-items: center;
     }
-    .nextClick{
-        display: block;
-        background-color: #010304;
-        margin-left: -5px;
-    }
     .spaceBigLogo h1{
-        font-size: 35px;
+        font-size: 37px;
         width: 100%;
-        margin-left: -30px;
+        margin-left: -15px;
     }
     .newsletter .p0{
         display: none;
@@ -578,7 +587,7 @@ footer{
     }
     .newsletter{
         flex-direction: column;
-        margin-left: -330px;
+        margin-left: -345px;
         margin-top: 650px;
         width: 140%;
     }
@@ -613,10 +622,22 @@ footer{
         display: none;
     }
     .space_logo{
-        margin-left: -25px;
+        margin-left: -45px;
         background-color: #010304;
-        width: 115%;
-        height: 9%;
+        width: 105%;
+        height: 8.4%;
+        overflow: hidden;
+    }
+    .space_logo h2{
+        margin-left: -150px;
+        display: flex;
+        position: relative;
+    }
+    .nextClick{
+        display: block;
+        background-color: #010304;
+        margin-left: 200px;
+        display: flex;
     }
     .space_logo ul{
         display: none;
@@ -738,6 +759,10 @@ footer{
         align-items: center;
         margin-bottom: 100px;
         font-size: 25px;
+    }
+    .netP2 h2{
+        margin-left: 140px;
+        margin-top: -125px;
     }
     .container_network .subNet .netP3{
         display: flex;
