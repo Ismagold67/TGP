@@ -1,4 +1,4 @@
-import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura, containerAnimation} from './variables/tagsMani.js'
+import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura, containerAnimation,p1, bigLogo, menuMobile, space_logo, background, space_logoH2, close, menuMobileA, mob} from './variables/tagsMani.js'
 
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -89,9 +89,31 @@ nextClick.addEventListener('touchend', () =>{
 if(largura < 321){
   nextClick.style.marginLeft = '145px'
 }
-nextClick.addEventListener('mousedown', () => {
-  containerAnimation.style.filter = 'blur(5px)'
+nextClick.addEventListener('click', () => {
+  menuMobile.style.display = 'block'
+  nextClick.style.opacity = '0'
+  nextClick.style.transition = '1s'
+  space_logo.style.transition = '1s'
+  space_logo.style.marginLeft = '80px'
+  space_logo.style.opacity = '0'
+  space_logoH2.style.opacity = '0'
+  bigLogo.style.transition = '1s'
+  p1.style.transition = '1s'
+  bigLogo.style.opacity = '0'
+  p1.style.opacity = '0'
+
 })
-nextClick.addEventListener('mouseup', () => {
-  containerAnimation.style.filter = 'blur(0)'
+close.addEventListener('click', () => {
+  menuMobile.style.display = 'none'
+  nextClick.style.opacity = '1'
+  space_logo.style.opacity = '1'
+  space_logoH2.style.opacity = '1'
+  space_logoH2.style.marginLeft = '-150px'
+  nextClick.style.marginLeft = '200px'
+
+  bigLogo.style.opacity = '1'
+  space_logo.style.marginLeft = '25px'
+  p1.style.opacity = '1'
 })
+
+

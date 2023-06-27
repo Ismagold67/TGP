@@ -547,13 +547,6 @@ footer{
     font-weight: bold;
 }
 /*FIM FOOTER*/
-.nextClick{
-    display: block;
-    background-color: #010304;
-    margin-left: 200px;
-    display: flex;
-}
-
 
 @media screen and (max-width: 758px){
     /*Container Initial*/
@@ -567,9 +560,9 @@ footer{
         height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;;
-
+        align-items: center;
     }
+ 
     .container_initial p {
         font-size: 15px;
     }
@@ -641,7 +634,65 @@ footer{
         display: block;
         background-color: #010304;
         margin-left: 200px;
+    }
+    .menuMobile{
+        width: 105%;
+        height: 100%;
+        position: absolute;
+        margin-left: -5px;
+        margin-top: -30px;
         display: flex;
+        background-color: #010304;
+        flex-direction: column;
+        text-decoration: none;
+        display: none;
+    }
+    .menuMobile img{
+        background-color: #f2f2f2;
+        max-width: 40px;
+        margin-left: 340px;
+        margin-top: 40px;
+        display: flex;
+    }
+    .ghost{
+        animation: yeah 3s;
+    }
+    @keyframes yeah{
+        0%{
+            transform: translateY(100%);
+        }
+        50%{
+            transform: translate(0)
+        }
+        100%{
+            transform: translateY(0)
+        }
+    }
+    .menuMobile a{
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 30px;
+        display: flex;
+        color: #f2f2f2;
+    }
+    .ghosted{
+        animation: yeaH 3s;
+    }
+    @keyframes yeaH{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translate(0)
+        }
+        100%{
+            transform: translateY(100%)
+        }
+    }
+    .menuMobile a:hover{
+        color: #f2f2f27b;
     }
     .space_logo ul{
         display: none;
