@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +6,9 @@
 }
 
 body{
-    font-family: 'Rajdhani', 'Arial' sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
+
 .container_initial{
     height: 750px;
     width: 100%;

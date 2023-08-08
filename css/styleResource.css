@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+    font-family: 'Oswald';
+}
+
 .msgResource{
     width: 100%;
     height: 300px;
