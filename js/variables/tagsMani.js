@@ -17,4 +17,44 @@ export const p1 = document.querySelector('.p1')
 export const background = document.querySelector('.background')
 export const close = document.querySelector('.close')
 export const ghost = document.querySelector('.ghost')
-export const mob = document.querySelector('.mob')
+export const like = document.querySelectorAll('.like')
+export const l1 = document.querySelectorAll('.l1')
+export const detachedPosts = document.querySelector('.detachedPosts')
+export const recPositionPost = document.querySelectorAll('.postRec .desc')
+export const allPost = document.querySelector('.allPosts')
+export const recPosition = document.querySelector('.recPosition')
+export const recHeightPost = document.querySelector('.recPositionPost')
+
+/*VARIÁVEIS CARROSSEL*/ 
+export const team = document.querySelector('.ourExperts')
+export const knowYouTeam = document.querySelector('.knowOurTeam')
+export const netAbout = document.querySelector('.netAbout')
+export const carrossel = document.querySelector('.carrossel')
+export const closeDiv = document.querySelector('.closed')
+export const arrowLeft = document.querySelector('.arrow-left')
+export const arrowRight = document.querySelector('.arrow-right')
+export const control = document.querySelectorAll('.control')
+export const non = document.querySelectorAll('.non')
+export const foot = document.querySelector('.foot')
+export const eff = document.querySelectorAll('.eff')
+export const contador = document.querySelector('.contador')
+export const tImg = document.querySelectorAll('.tImg') 
+
+/* FIM VARIÁVEIS CARROSSEL*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

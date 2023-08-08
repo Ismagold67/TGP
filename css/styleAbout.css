@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backgroundAbout{
+    width: 100%;
+    height: 150px;
+    background-color: #010304;
+}
+
+.about{
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.about div{
+    height: 100%;
+    overflow: hidden;
+}
+.about .nextAbout{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #162D35;
+    width: 45%;
+    color: #f2f2f2;
+}
+.about .nextAbout h1{
+    margin-top: 220px;
+    font-size: 50px;
+    display: flex;
+    width: 85%;
+    height: 250px;
+    margin-left: auto;
+    text-align: left;
+}
+.about .nextAbout hr{
+    margin-left: 105.5px;
+    margin-right: auto;
+    width: 40%;
+}
+.about .nextAbout p{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+.about .imgAbout{
+    overflow: hidden;
+    position: relative;
+    width: 55%;
+    height: 85%;
+    margin-top: 150px;
+}
+.about .imgAbout .imeg{
+    width: 100%;
+    background-image: url(../images/manInBuild.jpg);
+    height: 100%;
+    position: absolute;
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 850px;
+    position: absolute;
+    background-image: url(../images/modelAbout.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f2f2f2;
+}
+
+.mission h1{
+    font-size: 50px;
+    margin: 105px;
+    text-shadow: 2px 2px 2px #010304;
+}
+
+.mission .contentAbout {
+    width: 500px;
+    height: 400px;
+    margin-left: 105px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mission .contentAbout div{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    color: #f2f2f2;
+    font-weight: bolder;
+}
+.mission .contentAbout h1{
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 70px;
+    width: 100%;
+    margin-right: auto;
+    color: lightseagreen;
+    text-shadow: 2px 2px 2px #010304;
+    font-weight: bolder;
+}
+.mission .contentAbout p{
+    font-size: 20px;
+    margin-top: -100px;
+    width: 80%;
+}
+
+.contentAboutPar{
+    width: 500px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: 105px;
+    margin-top: -400px;
+    display: flex; 
+    overflow: hidden;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    color: #f2f2f2;
+}
+.contentAboutPar p{
+    height: 80%;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.contentAboutPar hr{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.contentValues{
+    width: 100%;
+    height: 850px;
+    position: relative;
+    margin-top: 850px;
+    background-color: #f2f2f2;
+}
+
+.contentValues .value{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}    
+.boxValues{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.boxValues div{
+    width: 20%;
+    height: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.153);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.153);
+    border-right: 1px solid rgba(0, 0, 0, 0.153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxValues div .contentBoxValues{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0);
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.boxValues div .contentBoxValues h2{
+    width: 100%;
+}
+.boxValues div .contentBoxValues img{
+    max-width: 45%;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+    margin-top: -50px;
+    margin-left: -80px; 
+}
+.boxValues div .contentBoxValues p{
+    text-align: left;
+}
+.boxValues :nth-child(2){
+    transition-delay: 300ms;
+}
+.boxValues :nth-child(3){
+    transition-delay: 350ms;
+}
+.boxValues :nth-child(4){
+    transition-delay: 400ms;
+}
+.boxValues :nth-child(5){
+    transition-delay: 450ms;
+}
+
+.sponsorship{
+    width: 100%;
+    height: 30%;
+}
+.work{
+    width: 100%;
+    height: 200px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sponsUp{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+.sponsUp div{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #f2f2f2;
+}
+.sponsUp div img{
+    width: 25%;
+    height: 100%;
+}
+.sponsUp div:nth-child(2){
+    transition-delay: 300ms;
+}
+.sponsUp div:nth-child(3){
+    transition-delay: 400ms;
+}
+.sponsUp div:nth-child(4){
+    transition-delay: 500ms;
+}
+.sponsDown{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+.sponsDown div{
+    display: flex;
+    width: 65%;
+    height: 70px;
+    background-color: #f2f2f2;
+}
+.sponsDown div img{
+    width: 20%;
+    height: 100%;
+}
+.netAbout{
+    margin-top: 280px;
+}

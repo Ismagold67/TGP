@@ -1,4 +1,65 @@
-import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura, containerAnimation,p1, bigLogo, menuMobile, space_logo, background, space_logoH2, close, menuMobileA, mob} from './variables/tagsMani.js'
+import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura, containerAnimation,p1, bigLogo, menuMobile, space_logo, space_logoH2, close, like, l1, detachedPosts, recPositionPost, allPost, recPosition, recHeightPost, eff, tImg, team, knowYouTeam, netAbout, foot, carrossel, closeDiv, arrowLeft, arrowRight, control, non, contador} from './variables/tagsMani.js'
+
+
+eff.forEach(ele => {
+  arrowLeft.style.display = 'none'
+  contador.style.display = 'none'
+
+  ele.addEventListener('click', () =>{
+    
+    let cont = 0;
+    function updateCont(){
+      contador.textContent = cont
+    }
+
+    team.style.display = 'none'
+    foot.style.display = 'none'
+    netAbout.style.display = 'none'
+    knowYouTeam.style.display = 'none'
+    carrossel.style.display = 'block'
+    arrowLeft.style.display = 'none '
+
+    control.forEach(controls => {
+      controls.addEventListener('click', () => {
+        const isLeft = controls.classList.contains('arrow-left')
+    
+        if(isLeft === false){
+          cont++
+          updateCont()
+        }
+        if(isLeft){
+          cont--
+          updateCont()
+        }
+        if(cont == 0){
+          arrowLeft.style.display = 'none'
+        } else{
+          arrowLeft.style.display = 'block'
+        }
+
+        if(cont == 5){
+          arrowRight.style.display = 'none'
+        } else{
+          arrowRight.style.display = 'block'
+        }
+        
+
+        tImg[cont].scrollIntoView({
+          inline: "center",
+          behavior: "smooth"
+        })
+      })
+    })
+  })
+  closeDiv.addEventListener('click', () => {
+    team.style.display = 'flex'
+    foot.style.display = 'flex'
+    netAbout.style.display = 'flex'
+    knowYouTeam.style.display = 'flex'
+    carrossel.style.display = 'none'
+})
+})
+
 
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -7,6 +68,7 @@ const myObserver = new IntersectionObserver((entries) => {
     }
   })
 })
+
 const myObserverUp = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting){
@@ -46,11 +108,6 @@ window.addEventListener('scroll', ()=> {
   } else {
     backgroundClass.style.transform = `scale(1.2) translateX(${scrollPosition}%)`
   }
-})
-
-window.addEventListener("resize", () =>{
-  var largura = window.innerWidth
-  console.log(largura)
 })
 
 
@@ -115,5 +172,49 @@ close.addEventListener('click', () => {
   space_logo.style.marginLeft = '25px'
   p1.style.opacity = '1'
 })
+
+like.forEach(element => {
+  element.addEventListener('click', () => {
+    l1.forEach(l1 => {
+      var cont = parseInt(l1.textContent) + 1
+      if(cont % 2 ==! 0){
+      cont = parseInt(l1.textContent) + 1
+      l1.textContent = `${cont}`
+      element.setAttribute('src', 'images/posCurtida.png') || element.setAttribute('src', '../images/posCurtida.png')
+      element.style.transition = '0.1s'
+      element.classList.add('likeAnim')
+    } 
+    if(cont % 2 == 0){
+      cont = parseInt(l1.textContent) - 1
+      l1.textContent = `${cont}` 
+      element.classList.remove('likeAnim')
+      element.setAttribute('src', 'images/curtida.png') || element.setAttribute('src', '../images/curtida.png')
+      element.style.transition = '0.1s'
+      element.style.transform = 'scale(1.1)'
+    }
+    
+    })
+  })
+})
+
+detachedPosts.addEventListener('click', () => {
+  recPositionPost.forEach(ele => {
+    ele.style.display = 'none'
+  })
+  recHeightPost.style.height = '1500px'
+  recPosition.style.height = '1700px'
+
+})
+allPost.addEventListener('click', () => {
+  recPositionPost.forEach(ele => {
+    ele.style.display = 'flex'
+  })
+  recHeightPost.style.height = '2200px'
+  recPosition.style.height = '2500px'
+
+})
+
+
+
 
 
