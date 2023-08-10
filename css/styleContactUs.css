@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+input, textarea{
+    outline: none;
+    border: 2px solid #FFF;
+    background: none;
+    caret-color: #FFF;
+    color: #FFF;
+}
+
+#field{
+    padding: 15px;
+    resize: none;
+}
+.backgroundContact{
+    width: 100%;
+    height: 150px;
+    background-color: #010304;
+    margin-top: -150px;
+}
+.contact{
+    margin-top: 150px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/predio.jpg);
+    background-size: 120%;
+}
+
+.infoContacts{
+    width: 100%;
+    height: 600px;
+}
+
+.windowForm{
+    width: 48%;
+    background: #07141c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contForm{
+    width: 70%;
+    height: 85%;
+}
+
+.contForm h2{
+    font-size: 60px;
+}
+
+.contForm hr{
+    width: 35%;
+}
+.contForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.contForm .form1{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 165px;
+    font-size: 18px;
+}
+
+.contForm .form1 p{
+    margin-left: 6px;
+}
+
+.contForm .form2{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.contForm .form2 button{
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    background: #fff;
+    color: #07141c;
+    border: none;
+}
+
+.contForm .form2 button:hover{
+    background: #07141c8f;
+    transition: 1.2s;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.contForm .form2 button:not(:hover){
+    transition: 1.2s;
+    border: none;
+}
+
+.contForm input{
+    padding: 15px;
+    width: 46%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.windowImage{
+    width: 52%;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.imgCont{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../images/imgContact.jpg);
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

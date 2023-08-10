@@ -95,7 +95,7 @@ lis.forEach(element => {
 
 window.addEventListener('scroll', ()=> {
   var scrollPosition = window.pageYOffset /100
-  //console.log(scrollPosition)
+  console.log(scrollPosition)
   element.style.transform = `scale(1.2) translateX(${scrollPosition}%)`
 })
 window.addEventListener('scroll', ()=> {
