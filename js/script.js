@@ -1,6 +1,7 @@
-import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura, containerAnimation,p1, bigLogo, menuMobile, space_logo, space_logoH2, close, like, l1, detachedPosts, recPositionPost, allPost, recPosition, recHeightPost, eff, tImg, team, knowYouTeam, netAbout, foot, carrossel, closeDiv, arrowLeft, arrowRight, control, non, contador} from './variables/tagsMani.js'
+import {lis, menuList, contClass, nextClick, animationDivs, element, backgroundClass, Up, largura,p1, bigLogo, menuMobile, space_logo, space_logoH2, close, like, l1, detachedPosts, recPositionPost, allPost, recPosition, recHeightPost, eff, tImg, team, knowYouTeam, netAbout, foot, carrossel, closeDiv, arrowLeft, arrowRight, control, contador} from './variables/tagsMani.js'
 
 
+//animação/efeitos carrossel da página "Nosso time"
 eff.forEach(ele => {
   arrowLeft.style.display = 'none'
   contador.style.display = 'none'
@@ -60,7 +61,7 @@ eff.forEach(ele => {
 })
 })
 
-
+//animação entrada de baixo pra cima || esquerda pra direita
 const myObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting){
@@ -79,6 +80,7 @@ const myObserverUp = new IntersectionObserver((entries) => {
 animationDivs.forEach((element) => myObserver.observe(element))
 Up.forEach((element) => myObserverUp.observe(element))
 
+// efeito de zoom e deslize para esquerda ou direita
 lis.forEach(element => {
   var largura = window.innerWidth
 
@@ -213,7 +215,6 @@ allPost.addEventListener('click', () => {
   recPosition.style.height = '2500px'
 
 })
-
 
 
 

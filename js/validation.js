@@ -15,6 +15,10 @@ const arrowOne = document.querySelector('#img1')
 const arrowTwo = document.querySelector('#img2')
 const arrowThree = document.querySelector('#img3')
 
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
+
+
 function disableNoneDivOne(tag, changedTag, arr){
     let cont = 0
     tag.addEventListener('click', () => {
@@ -98,4 +102,17 @@ form.lastName.addEventListener('keyup', event => {
       return  form.lastName.style.border = '2px solid #fff'
     }
 })
+
+
+//efeito de animação de entrada pela esqurda e direita
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting){
+        entry.target.classList.add(animationClass)
+      }
+    })
+  })
+
+target.forEach((element) => myObserver.observe(element))
+//
 

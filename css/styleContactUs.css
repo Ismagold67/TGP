@@ -245,3 +245,18 @@ input, textarea{
     height: 100%;
     background-size: cover;
 }
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+[data-anime = "left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime = "right"] {
+    transform: translate3d(50px, 0, 0);
+}
+.animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}

@@ -40,8 +40,6 @@ export const eff = document.querySelectorAll('.eff')
 export const contador = document.querySelector('.contador')
 export const tImg = document.querySelectorAll('.tImg') 
 
-/* FIM VARIÁVEIS CARROSSEL*/
-
 
 
 
