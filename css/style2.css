@@ -140,7 +140,7 @@ body{
     display: none;
 }
 .newsletter{
-    margin-top: -940px;
+    margin-top: -1000px;
     width: 100%;
     display: flex;
     justify-content: space-around;
